@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <title>Usuarios</title>
+</head>
+<header class="container">
+  <h1>BIENVENIDOS...</h1>
+  <br>
+  <br>
+  <button id="get" class="btn btn-outline-warning btn-lg ">TRAER TODOS LOS USUARIOS</button>
+  <button id="btn-usuario" type="button" class="btn btn-outline-primary btn-lg " data-bs-toggle="modal"
+    data-bs-target="#crearusuario">
+    CREAR USUARIO
+  </button>
+</header>
+<br>
+<br>
+
+
+<body>
+  <main>
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">IDENTIFICACION</th>
+            <th scope="col">NOMBRE</th>
+            <th scope="col">DIRECCION</th>
+            <th scope="col">TELEFONO</th>
+            <th scope="col">EMAIL</th>
+            <th scope="col">ACCIONES</th>
+          </tr>
+        </thead>
+        <tbody id="users-get">
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal fade" id="crearusuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Crear usuario</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="row g-3">
+              <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">Identificacion</label>
+                <input type="number" class="form-control" id="id"  required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefaultUsername" class="form-label">Correo</label>
+                <div class="input-group">
+                  <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                  <input type="text" class="form-control" id="email"
+                    aria-describedby="inputGroupPrepend2" required>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Direccion</label>
+                <input type="text" class="form-control" id="adrress" required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Telefono</label>
+                <input type="number" class="form-control" id="phone" required>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button id="create-user" type="button" class="btn btn-primary">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script type="module" src="./app/main.js"></script>
+
+</body>
+
+</html>

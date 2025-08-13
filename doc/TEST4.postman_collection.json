@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "5bde53bf-5297-43e1-8385-4462c5b42d9e",
+		"name": "TEST4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46562181",
+		"_collection_link": "https://apibd7.postman.co/workspace/Joel~304bed97-77cd-47dc-8b18-e76db3de4e3a/collection/46562181-5bde53bf-5297-43e1-8385-4462c5b42d9e?action=share&source=collection_link&creator=46562181"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/totalpaid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/totalpaid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"totalpaid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/transactions/platform/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/transactions/platform/nequi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"transactions",
+						"platform",
+						"nequi"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
