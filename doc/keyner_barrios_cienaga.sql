@@ -48,6 +48,7 @@ paid_amount int,
 identification_number int,
 id_transaction varchar(50),
 
-FOREIGN KEY (identification_number) REFERENCES users(identification_number),
+FOREIGN KEY (identification_number) REFERENCES users(identification_number) ON DELETE CASCADE,
 FOREIGN KEY (id_transaction) REFERENCES transactions(id_transaction)
 );
+

@@ -35,6 +35,31 @@ app.get("/totalpaid", (req, res) => {
     });
 });
 
+app.delete('/users/:identification_number', async (req, res) => {
+    try {
+        const { identification_number } = req.params
+
+        const query = `
+        DELETE FROM users WHERE identification_number = ?
+        `
+        const values = [
+            identification_number
+        ]
+
+        const [result] = await conecction.promise().query(query, values)
+
+        if (result.affectedRows != 0) {
+            return res.json({ mensaje: "user delete" })
+        }
+    } catch (error) {
+        res.status(500).json({
+            status: 'error',
+            endpoint: req.originalUrl,
+            method: req.method,
+            message: error.message
+        });
+    }
+})
 
 // THIS IS PLATFORM TRANSACTIONS
 
