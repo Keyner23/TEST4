@@ -15,7 +15,7 @@ This is a system designed for the best administration of a user transaction comp
 
 ---
 
-## Explanation of normalization
+##  :bookmark_tabs: Explanation of normalization :bookmark_tabs:
 First, we detailed the file part by part to understand what was being requested from us, then we separated the CSV files to create the table with its fields and then create the massive insertion with Node. Then I created the relational model in Drawio and then we made the query based on the files that we separated, and thus I performed the normalization where no field is repeated and each one is in its corresponding table.
 
 
@@ -67,12 +67,12 @@ You must open the terminal and then execute the following routes for bulk loadin
 node server/seeders/run_seeders.js 
 
 ```
-5. Initialize the frontend:
+6. Initialize the frontend:
 ```bash
 npm run dev
 ```
 
 
-# NAME: Keyner Andres Barrios Ochoa
-# CLAN: Cienaga
-# Correo: keinerba.ochoa@gmail.com
+### NAME: Keyner Andres Barrios Ochoa
+### CLAN: Cienaga
+### Correo: keinerba.ochoa@gmail.com
