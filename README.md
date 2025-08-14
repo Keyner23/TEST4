@@ -71,8 +71,10 @@ node server/seeders/run_seeders.js
 ```bash
 npm run dev
 ```
+---
 
+## CODER
+- Keyner Andres Barrios Ochoa
+- Cienaga
+- keinerba.ochoa@gmail.com
 
-### NAME: Keyner Andres Barrios Ochoa
-### CLAN: Cienaga
-### Correo: keinerba.ochoa@gmail.com
