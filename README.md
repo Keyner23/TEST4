@@ -1,4 +1,4 @@
-#  INVOICE MANAGER
+#  :card_index: INVOICE MANAGER :card_index:
 
 This is a system designed for the best administration of a user transaction company. The backend was built with **node.js** and the apis were raised with **express**, we manage a relational database, in this project we use **mysql** and the frontend is managed with **vite** and **boostrap**, the backend is located in the **server folder** and the frontend is located in the **app folder**.The loading of users, statuses, invoices and transactions was done from the node in bulk.
 
