@@ -73,7 +73,7 @@ npm run dev
 ```
 ---
 
-## CODER
+##  :goat: CODER :goat:
 - Keyner Andres Barrios Ochoa
 - Cienaga
 - keinerba.ochoa@gmail.com
