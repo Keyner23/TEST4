@@ -26,13 +26,13 @@ TEST4/
 │
 ├── app/ # Frontend (HTML, CSS, JS)
 │       ...
+├── doc/ 
+│       ...
 ├── server/ # Backend
 │       ...
-├── server/ 
-│       ...
+├── .gitignore
 ├── index.html  
 ├── LICENSE
-├── .gitignore
 └── README.md
 ```
 
